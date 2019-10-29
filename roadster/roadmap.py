@@ -1,6 +1,8 @@
 import requests
 import csv
 
+"""CSV generator for IJS road mapping"""
+
 def make_url(lat,lon):
     return 'https://www.google.si/maps/place/{},{}/@{},{},14.48z'.format(lat, lon, lat, lon)
 

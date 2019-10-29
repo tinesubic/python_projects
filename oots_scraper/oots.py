@@ -4,6 +4,8 @@ from tqdm import tqdm
 import multiprocessing
 ROOT_URL = 'http://www.giantitp.com/comics/images/'
 
+"""Scrapes files from OOTS comic"""
+
 MAX = 1103
 
 def dl_file(num):
@@ -13,12 +15,6 @@ def dl_file(num):
         urllib.request.urlretrieve(url, './oots/oots' + str(num).zfill(4) + '.gif')
     except:
         print(url)
-
-
-
-
-
-
 
 if __name__ == '__main__':
    # multiprocessing.freeze_support()
